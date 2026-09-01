@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  media-organizer:
+    build: .
+    container_name: media-organizer
+    restart: unless-stopped
+    volumes:
+      - /path/to/downloads:/downloads
+      - /path/to/movies:/movies
+      - /path/to/series:/series
+      - ./config:/config
+      - ./data:/data
+      - ./logs:/logs
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    ports:
+      - "8000:8000"

@@ -1,0 +1,17 @@
+downloads_path: /downloads
+movies_path: /movies
+series_path: /series
+
+tmdb_api_key: your_api_key_here
+
+subtitle_languages:
+  - en
+  - fr
+
+confidence:
+  automatic: 95
+  validation: 70
+
+operation_mode: move
+dry_run: true
+scan_interval: 300

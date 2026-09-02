@@ -1,0 +1,28 @@
+# --- Python Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Python Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- Local Configuration & Secrets ---
+# Keep local config out of git to avoid committing private API keys
+config/config.yaml
+!.gitkeep
+
+# --- Environment & Runtime Data ---
+*.env
+*.json
+*.log
+
+# --- IDEs & System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
